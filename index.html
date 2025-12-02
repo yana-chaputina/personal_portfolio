@@ -5,32 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/styles.css">
+    <script defer src="./script.js"></script>
     <title>Iana Priazhkina</title>
 </head>
 
 <body>
-    <header>
+    <!-- Header -->
+    <header class="flex-container center">
         <p>Iana Priazhkina</p>
         <nav class="navigation">
             <ul>
-                <li><a href="#aboutme">About me</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a id="aboutme-link" href="#aboutme">About me</a></li>
+                <li><a id="resume-link" href="#">Resume</a></li>
+                <li><a id="projects-link" href="#projects">Projects</a></li>
+                <li><a id="contact-link" href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+        <!-- Section "About me" -->
         <section id="aboutme">
-            <div class="container-aboutme">
-                <div class="container-aboutme-item">
+            <div class="aboutme flex-container center width-100">
+                <div class="aboutme flex-container-item">
                     <img src="./resources/images/ipr_photo.jfif" alt="Iana Priazhkina photo">
                 </div>
-                <div class="container-aboutme-item">
+                <div class="aboutme flex-container-item width-100">
                     <h1>Hello!</h1>
                     <p>I'm Iana Priazhkina - strong and well-versed Backend Developer with deep knowledge in
                         microservice architecture on Java/Spring, with some experience in JavaScript frontend
-                        development.</p>
+                        development. Currently, I'm focused on developing myself as a full-stack developer on React and
+                        Node.js.</p>
                     <ul>
                         <li>Software Engineer with 4+ years of experience</li>
                         <li>Skilled both in creating microservices from the scratch and supporting existing solutions
@@ -42,17 +46,163 @@
                     </ul>
                 </div>
         </section>
+        <!-- Section "Resume" -->
+        <section id="resume">
+            <h2>Resume</h2>
+            <div class="resume flex-container-column">
+                <div class="resume flex-container underline-border">
+                    <div class="flex-container-header">
+                        <h3>Work experience</h3>
+                    </div>
+                    <div class="flex-container-column">
+                        <div class="flex-container underline-border">
+                            <h4 class="flex-container-header date">Jul 2022 - Oct 2023</h4>
+                            <div>
+                                <h4>EPAM - Java Software Engineer</h4>
+                                <h5>Vilnius, Lithuania</h5>
+                                <p>Customer: Expedia US</p>
+                                <p> Project Description: Development and supporting of microservices in the fraud
+                                    monitoring
+                                    domain</p>
+                                <ul class="list-circle">
+                                    <li>Successfully migrated microservices from java 8 to java 17</li>
+                                    <li>Maintained and deployed microservices to the AWS cloud</li>
+                                    <li>Troubleshooted backend and frontend issues</li>
+                                    <li>Participated in sprint planning, estimation, clarification requirements</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex-container underline-border">
+                            <h4 class="flex-container-header date">Aug 2021 - Jun 2022</h4>
+                            <div>
+                                <h4>EPAM - Java Software Engineer</h4>
+                                <h5>Nizhny Novgorod, Russia</h5>
+                                <p>Customer: PJSC Sberbank</p>
+                                <p> Project Description: Development and supporting of remote banking system for
+                                    business
+                                </p>
+                                <ul class="list-circle">
+                                    <li>Took a part in migrating service with monolithic architecture to new
+                                        microservices
+                                    </li>
+                                    <li>Added new integration functionality</li>
+                                    <li>Troubleshooted services and integration issues</li>
+                                    <li>Onboarded new developers and shared knowledge</li>
+                                    <li>Wrote business requirements for developers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex-container underline-border">
+                            <h4 class="flex-container-header date">Jan 2020 - Jun 2021</h4>
+                            <div>
+                                <h4>Rosbank - Junior Java Developer</h4>
+                                <h5>Nizhny Novgorod, Russia</h5>
+                                <p> Project Description: Development of internal facing applications - microservices for
+                                    document’s lifecycle</p>
+                                <ul class="list-circle">
+                                    <li>Created microservices from the scratch</li>
+                                    <li>Wrote pipelines and deployed services to the cloud</li>
+                                    <li>Maintained microservices and collected analytics</li>
+                                    <li>Created Confluence pages to share knowledge</li>
+                                    <li>Wrote business requirements for developers</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="flex-container">
+                            <h4 class="flex-container-header date">Aug 2018 - Mar 2019</h4>
+                            <div>
+                                <h4>Sphere NN - .NET Developer</h4>
+                                <h5>Nizhny Novgorod, Russia</h5>
+                                <p> Project Description: WPF desktop application used by small business to managed
+                                    documents/orders/customers/warranty support</p>
+                                <ul class="list-circle">
+                                    <li>Communicated with the client</li>
+                                    <li>Analyzed business requirements</li>
+                                    <li>Designed product architecture</li>
+                                    <li>Developed client application for Windows desktop with GUI on WPF</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume flex-container underline-border">
+                    <div class="flex-container-header">
+                        <h3>Education</h3>
+                    </div>
+                    <div class="flex-container-column">
+                        <div class="flex-container">
+                            <h4 class="flex-container-header date">2013 - 2017</h4>
+                            <p>State University of Nizhni Novgorod named after N.I. Lobachevsky (UNN), Bachelor's
+                                degree, Information Technology</p>
+                        </div>
+                        <div class="flex-container">
+                            <h4 class="flex-container-header date">2019</h4>
+                            <p>Rosbank - course for Java Developer</p>
+                        </div>
+                        <div class="flex-container">
+                            <h4 class="flex-container-header date">2025</h4>
+                            <p>Codecademy - Full-Stack Engineer course</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="resume flex-container underline-border">
+                    <div class="flex-container-header">
+                        <h3>Technologies</h3>
+                    </div>
+                    <div class="flex-container-column width-100">
+                        <div class="flex-container flex-align-center">
+                            <h4 class="flex-container-header">Back-end development</h4>
+                            <p>Java 17, Java 8, Spring Framework, Gradle, REST </p>
+                        </div>
+                        <div class="flex-container">
+                            <h4 class="flex-container-header">Front-end development</h4>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="flex-container">
+                            <h4 class="flex-container-header">DB</h4>
+                            <p>PostgreSQL, Oracle DB, MongoDB </p>
+                        </div>
+                        <div class="flex-container">
+                            <h4 class="flex-container-header">Cloud</h4>
+                            <p>AWS, On-prems</p>
+                        </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="resume flex-container">
+                    <div class="flex-container-header">
+                        <h3>Languages</h3>
+                    </div>
+                    <div class="flex-container-column width-100">
+                        <div class="flex-container">
+                            <h4 class="flex-container-header">Russian</h4>
+                            <p>Native</p>
+                        </div>
+                        <div class="flex-container">
+                            <h4 class="flex-container-header">English</h4>
+                            <p>B1+</p>
+                        </div>
+                        <div class="flex-container">
+                            <h4 class="flex-container-header">Serbian</h4>
+                            <p>A2</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    <footer id="contact">
-        <div class="footer-item">
-            <h3>Email</h3>
+    <!-- Footer -->
+    <footer id="contact" class="flex-container width-100">
+        <div class="contact flex-container flex-align-center">
+            <h4 class="flex-container-header">Email</h4>
             <p>ipriazh@gmail.com</p>
         </div>
-        <div class="footer-item">
-            <h3>Follow me</h3>
+        <div class="contact flex-container flex-align-center">
+            <h4 class="flex-container-header">Follow me</h4>
             <a href="https://www.linkedin.com/in/iana-priazhkina-04769a293/">
-                <img src="./resources/images/linkedin-icon.png" alt="https://www.linkedin.com/in/iana-priazhkina-04769a293/">
-            </a>    
+                <img src="./resources/images/linkedin-icon.png"
+                    alt="https://www.linkedin.com/in/iana-priazhkina-04769a293/">
+            </a>
         </div>
     </footer>
 </body>
