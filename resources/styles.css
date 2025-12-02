@@ -114,22 +114,12 @@ main {
 
 /* Section "Resume" styles */
 
-#resume {
-    display: none;
-}
-
 .resume.flex-container {
     padding: 1rem 0;
 }
 
 .flex-container-header.date {
     font-weight: 100;
-}
-
-/* Section "Resume" styles */
-
-#projects {
-    display: none;
 }
 
 /* Footer styles */
