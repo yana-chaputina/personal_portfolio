@@ -54,6 +54,21 @@ ul li {
     padding-left: 1em;
 }
 
+
+h1 {
+    margin-top: 0;
+
+}
+
+h2 {
+    margin-bottom: 4rem;
+    font-size: 2.2rem;
+}
+
+h3 {
+    font-size: 1.3rem;
+}
+
 /* Header styles */
 
 header {
@@ -75,22 +90,9 @@ header p {
     border-right: 1px solid rgb(12, 7, 1);
 }
 
+
 .navigation ul li:last-child {
     border-right: none;
-}
-
-h1 {
-    margin-top: 0;
-
-}
-
-h2 {
-    margin-bottom: 4rem;
-    font-size: 2.2rem;
-}
-
-h3 {
-    font-size: 1.3rem;
 }
 
 /* Main styles */
@@ -140,4 +142,70 @@ footer a img {
     width: 25px;
     height: 25px;
     padding-left: 1rem;
+}
+
+/* Responsive styles */
+
+@media only screen and (max-width:800px) {
+    html {
+        font-size: 14px;
+    }
+
+    main {
+        margin: 3rem;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    html {
+        font-size: 10px;
+    }
+
+    main {
+        margin: 3rem;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    h1 {
+        align-self: center;
+    }
+
+    h2 {
+        margin-bottom: 2rem;
+    }
+
+    ul {
+        padding: 0 1em;
+    }
+
+    .navigation {
+        margin: 0 auto;
+    }
+
+    .aboutme.flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    footer {
+        align-items: center;
+    }
+
+    .contact.flex-container {
+        flex-direction: row;
+    }
+
+    .fix.flex-container {
+        flex-direction: row;
+    }
+
+    .fix .flex-container-header {
+        width: 30%;
+    }
+
 }
